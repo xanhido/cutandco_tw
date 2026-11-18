@@ -4,7 +4,11 @@ dist/
 .github/
 backend/
 .gitignore
-Dockerfile
 .dockerignore
-docker-compose.yml
 README.md
+
+# секреты и сертификаты не должны попадать в контекст сборки
+.env
+.env.*
+*.pem
+deploy/certs/
